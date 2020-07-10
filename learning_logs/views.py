@@ -30,7 +30,7 @@ def new_topic(request):
         form = TopicForm(data=request.POST)
         if form.is_valid():
             form.save()
-            return redirect('learning_logs:topics')
+            return redirect('topics')
 
     # Display a blank or invalid form.
     context = {'form': form}
