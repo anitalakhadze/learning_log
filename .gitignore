@@ -5,3 +5,4 @@ __pycache__/
 *$py.class
 local_settings.py
 db.sqlite3
+ll_env
