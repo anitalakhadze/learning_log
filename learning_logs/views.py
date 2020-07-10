@@ -1,6 +1,4 @@
-from django.shortcuts import render
-from django.http import HttpResponseRedirect
-from django.core.urlresolvers import reverse
+from django.shortcuts import render, redirect
 
 from .models import Topic
 from .forms import TopicForm
@@ -29,10 +27,11 @@ def new_topic(request):
         form = TopicForm()
     else:
         # POST data submitted; process data.
-        form = TopicForm(request.POST)
+        form = TopicForm(data=request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect(reverse('learning_logs:topics'))
-    
+            return redirect('learning_logs:topics')
+
+    # Display a blank or invalid form.
     context = {'form': form}
     return render(request, 'learning_logs/new_topic.html', context)
