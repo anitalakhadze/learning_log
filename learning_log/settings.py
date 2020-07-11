@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Third party apps
+    'bootstrap4',
+
     # My apps
     'learning_logs',
     'users',
@@ -125,3 +128,4 @@ STATIC_URL = '/static/'
 
 # My settings
 LOGIN_URL = '/users/login'
+
