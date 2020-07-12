@@ -126,14 +126,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
-STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
-STATIC_URL = '/static/'
+# PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
+# STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
+# STATIC_URL = '/static/'
 
-# Extra lookup directories for collectstatic to find static files
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
-)
+# # Extra lookup directories for collectstatic to find static files
+# STATICFILES_DIRS = (
+#     os.path.join(PROJECT_ROOT, 'static'),
+# )
 
 #  Add configuration for static files storage using whitenoise
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
@@ -142,8 +142,8 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 LOGIN_URL = '/users/login'
 
 # Heroku settings.
-if os.getcwd() == '/app':
-
+cwd = os.getcwd()
+if cwd == '/app' or cwd[:4] == '/tmp':
     import dj_database_url
     DATABASES = {
         'default': dj_database_url.config(default='postgres://localhost')
