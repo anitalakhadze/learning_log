@@ -1,8 +1,9 @@
 .pyc
 __pycache__
-__pycache__/
 *.py[cod]
 *$py.class
 local_settings.py
 *.sqlite3
 ll_env
+staticfiles
+admin
