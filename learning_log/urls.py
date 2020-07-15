@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('learninglog/users/', include('users.urls', namespace='users')),
     path('learninglog/', include('learning_logs.urls', namespace='learning_logs')),
+    path('', include('welcome.urls', namespace='welcome')),
 
     path('superlists/', list_views.home_page, name='home'),
     path('superlists/lists/', include(list_urls), name='lists'),
