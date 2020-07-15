@@ -18,14 +18,14 @@ from django.urls import path, include
 
 from lists import views as list_views
 from lists import urls as list_urls
-from accounts import urls as accounts_urls
+# from accounts import urls as accounts_urls
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('learninglog/users/', include('users.urls', namespace='users')),
     path('learninglog/', include('learning_logs.urls', namespace='learning_logs')),
 
     path('superlists/', list_views.home_page, name='home'),
     path('superlists/lists/', include(list_urls), name='lists'),
-    path('superlists/accounts/', include(accounts_urls), name='accounts'),
+    # path('superlists/accounts/', include(accounts_urls), name='accounts'),
 ]
