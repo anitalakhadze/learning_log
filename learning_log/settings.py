@@ -26,7 +26,9 @@ SECRET_KEY = 'v_3nkmo18ma+-8c*kx30n$wdx6mlfv9*)!l01xbn9(=41_=rlv'
 DEBUG = True
 
 #  'learning_log.herokuapp.com'
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1:8000',
+'peaceful-meadow-63182.herokuapp.com',
+]
 
 
 # Application definition
