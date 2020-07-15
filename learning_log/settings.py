@@ -27,6 +27,7 @@ DEBUG = True
 
 #  'learning_log.herokuapp.com'
 ALLOWED_HOSTS = ['127.0.0.1:8000',
+'127.0.0.1',
 'peaceful-meadow-63182.herokuapp.com',
 ]
 
@@ -48,6 +49,8 @@ INSTALLED_APPS = [
     'learning_logs',
     'users',
     # 'herokuapp',
+    'lists',
+    'accounts',
 ]
 
 MIDDLEWARE = [
