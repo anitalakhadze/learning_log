@@ -18,37 +18,42 @@
 </head>
 <body>
 
-    <nav class="nav-wrapper">
-        <div class="container">
-            <a href="#" class="brand-logo">Site Title</a>
-            <a href="#" class="sidenav-trigger" data-target="mobile-links">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="btn-floating green lighten-3 z-depth-0">
-                    <i class="material-icons">notifications</i>
-                </a></li>
-                <li><span class="badge black-text yellow new">5</span></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="container">
+        <h2>Cards</h2>
+        <div class="row">
+            <div class="col s12 l6">
+                <div class="card">
 
-    <ul class="sidenav" id="mobile-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+                    <div class="card-image">
+                        <img src="" alt="Mango Image">
+                        <a href="#" class="halfway-fab btn-floating pink pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+
+                    <div class="card-content">
+                        <span class="card-title">Mango</span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+
+                    <div class="card-action">
+                        <a href="#">More Details</a>
+                        <a href="#">View Ingredients</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col s12 l6">
+
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.sidenav').sidenav();
-        })
-    </script>
 </body>
 </html>
