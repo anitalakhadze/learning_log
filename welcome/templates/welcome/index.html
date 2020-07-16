@@ -19,60 +19,30 @@
 <body>
 
     <div class="container">
-        <h2>Collections</h2>
-        <ul class="collection with-header">
-            <li class="collection-header"><h4>Customers</h4></li>
+        <h2>Modals</h2>
 
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Ryu</span>
-                <p class="grey-text">black-belt</p>
-                <a href="" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
+        <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Terms & Conditions</h4>
+                <p>Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum.</p>
+            </div>
 
-            <li class="collection-item avatar">
-                <i class="material-icons circle green">person</i>
-                <span class="title">Ryu</span>
-                <p class="grey-text">black-belt</p>
-                <a href="" class="secondary-content">
-                    <i class="material-icons green-text">email</i>
-                </a>
-            </li>
-
-            <li class="collection-item avatar">
-                <i class="material-icons circle pink">person</i>
-                <span class="title">Ryu</span>
-                <p class="grey-text">black-belt</p>
-                <a href="" class="secondary-content">
-                    <i class="material-icons pink-text">email</i>
-                </a>
-            </li>
-
-            <li class="collection-item avatar">
-                <i class="material-icons circle yellow darken-1">person</i>
-                <span class="title">Ryu</span>
-                <p class="grey-text">black-belt</p>
-                <a href="" class="secondary-content">
-                    <i class="material-icons yellow-text darken-1">email</i>
-                </a>
-            </li>
-
-            <li class="collection-item avatar">
-                <i class="material-icons circle orange">person</i>
-                <span class="title">Ryu</span>
-                <p class="grey-text">black-belt</p>
-                <a href="" class="secondary-content">
-                    <i class="material-icons orange-text">email</i>
-                </a>
-            </li>
-
-        </ul>
+            <div class="modal-footer">
+                <a href="#" class="modal-close btn orange">Agree & Close</a>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        })
+    </script>
+
 </body>
 </html>
