@@ -8,6 +8,13 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Welcome</title>
+    <style>
+        nav .badge{
+            position: relative;
+            top: 20px;
+            right: 20px; 
+        }
+    </style>
 </head>
 <body>
 
@@ -21,7 +28,10 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="#" class="btn-floating green lighten-3 z-depth-0">
+                    <i class="material-icons">notifications</i>
+                </a></li>
+                <li><span class="badge black-text yellow new">5</span></li>
             </ul>
         </div>
     </nav>
