@@ -17,6 +17,10 @@
           background-position: center;
           min-height: 1000px;
       }
+      .section{
+          padding-top: 4vw;
+          padding-bottom: 4vw; 
+      }
       @media screen and (max-width: 670px){
           header{
               min-height: 500px;
@@ -51,14 +55,76 @@
 
   <!-- photo / grid -->
 
+  <section class="container section" id="Photos">
+
+      <div class="row">
+          <div class="col s12 l4">
+              <img src="img/portrait.jpg" alt="" class="responsive-img materialboxed">
+          </div>
+          <div class="col s12 l6 offset-l1">
+              <h2 class="indigo-text text-darken-4">Portraits</h2>
+              <p>Some Lorem Ipsum</p>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 l4 push-l7 offset-l1">
+            <img src="img/city.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 pull-l5 right-align offset-l1">
+            <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+            <p>Some Lorem Ipsum</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 l4">
+            <img src="img/nature.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 offset-l1">
+            <h2 class="indigo-text text-darken-4">Nature</h2>
+            <p>Some Lorem Ipsum</p>
+        </div>
+    </div>
+
+  </section>
+
   <!-- parallax -->
+
+  <div class="parallax-container">
+      <div class="parallax">
+          <img src="img/street.jpg" alt="" class="responsive-img">
+      </div>
+  </div>
 
   <!-- services / tabs -->
 
+  <div class="container">
+      <p>Lorem Ipsum</p>
+      <p>Lorem Ipsum</p>
+      <p>Lorem Ipsum</p>
+      <p>Lorem Ipsum</p>
+      <p>Lorem Ipsum</p>
+  </div>
+
   <!-- parallax -->
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/stars.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
 
   <!-- contact form -->
 
+    <div class="container">
+        <p>Lorem Ipsum</p>
+        <p>Lorem Ipsum</p>
+        <p>Lorem Ipsum</p>
+        <p>Lorem Ipsum</p>
+        <p>Lorem Ipsum</p>
+    </div>
+    
   <!-- footer -->
 
   <!-- Compiled and minified JavaScript -->
@@ -67,6 +133,8 @@
   <script>
     $(document).ready(function(){
         $('.sidenav').sidenav();
+        $('.materialboxed').materialbox(); 
+        $('.parallax').parallax();
     });
   </script>
 </body>
