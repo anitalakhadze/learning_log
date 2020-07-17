@@ -11,15 +11,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <title>Photo Ninja</title>
   <style>
-      header{
-          background: url(img/man.jpg);
+      /* header{
+          background: url(img/projects.jpg);
           background-size: cover;
+          background-repeat: no-repeat;
           background-position: center;
-          min-height: 1000px;
-      }
+          min-height: 800px;
+      } */
       .section{
           padding-top: 4vw;
           padding-bottom: 4vw; 
+      }
+      .tabs .indicator{
+          background-color: plum;
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active{
+          background: transparent;
       }
       @media screen and (max-width: 670px){
           header{
@@ -32,7 +39,7 @@
 
   <!-- navbar -->
   <header>
-    <nav class="nav-wrapper transparent">
+    <nav class="nav-wrapper black">
         <div class="container">
             <a href="" class="brand-logo">Welcome To My Projects!</a>
             <a href="#" class="sidenav-trigger" data-target="mobile-menu">
@@ -42,6 +49,15 @@
                 <li><a href="#">Photos</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small amber" data-tooltip="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small amber" data-tooltip="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small amber" data-tooltip="Linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a></li>
             </ul>
 
             <ul class="sidenav grey lighten-2" id="mobile-menu">
@@ -52,6 +68,12 @@
         </div>
     </nav>
   </header>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/projects.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
 
   <!-- photo / grid -->
 
@@ -99,13 +121,34 @@
 
   <!-- services / tabs -->
 
-  <div class="container">
-      <p>Lorem Ipsum</p>
-      <p>Lorem Ipsum</p>
-      <p>Lorem Ipsum</p>
-      <p>Lorem Ipsum</p>
-      <p>Lorem Ipsum</p>
-  </div>
+  <section class="container section" id="services">
+    <div class="row">
+        <div class="col s12 l4">
+            <h2 class="indigo-text text-darken-4">What I Do...</h2>
+            <p>Lorem Ipsum lkjdflkdsjlfkjsdlvk lksdflk lks lkvndf</p>
+        </div>
+
+        <div class="col s12 l6 offset-l2">
+            <ul class="tabs">
+                <li class="tab col s6">
+                    <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+                </li>
+                <li class="tab col s6">
+                    <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+                </li>
+            </ul>
+
+            <div class="col s12" id="photography">
+                <p class="flow-text indig-text text-darken-4">PHOTOGRAPHY</p>
+                <p>Lorem Ipsum ldskfldsk lksdlfkjdsflsdfjsa akjsdkjf</p>
+            </div>
+            <div class="col s12">
+                <p class="flow-text indig-text text-darken-4" id="editing">EDITING</p>
+                <p>Lorem Ipsum ldskfldsk lksdlfkjdsflsdfjsa akjsdkjf</p>
+            </div>
+        </div>
+    </div>
+  </section>
 
   <!-- parallax -->
 
@@ -117,15 +160,87 @@
 
   <!-- contact form -->
 
-    <div class="container">
-        <p>Lorem Ipsum</p>
-        <p>Lorem Ipsum</p>
-        <p>Lorem Ipsum</p>
-        <p>Lorem Ipsum</p>
-        <p>Lorem Ipsum</p>
-    </div>
-    
+    <section class="section container" id="contact">
+        <div class="row">
+
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+                <p>Lorem Ipsum Lorem Ipsum lorem ipsum</p>
+            </div>
+
+            <div class="col s12 l5 offset-l2">
+                <form action="">
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Choose a date you need me for...</label>
+                    </div>
+
+                    <div class="input-field">
+                        <p>Services Required...</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Photography</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Editing</span>
+                            </label>
+                        </p>
+                    </div>
+
+                    <div class="input-field center">
+                        <button class="btn">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
   <!-- footer -->
+
+  <footer class="page-footer grey darken-3">
+      <div class="container">
+          <div class="row">
+
+              <div class="col s12 l6">
+                  <h5>About Me</h5>
+                  <p>lorem ipsum lorem ipsum</p>
+              </div>
+
+              <div class="col s12 l4 offset-l2">
+                  <h5>Connect</h5>
+                  <ul>
+                      <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                      <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+                      <li><a href="#" class="grey-text text-lighten-3">Linkedin</a></li>
+                      <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+                    </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="footer-copyright grey darken-4">
+          <div class="container center-align">&copy; 2020 Ani Talakhadze</div>
+      </div>
+  </footer>
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -135,6 +250,11 @@
         $('.sidenav').sidenav();
         $('.materialboxed').materialbox(); 
         $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+            disableWeekends: true
+        });
+        $('.tooltipped').tooltip();
     });
   </script>
 </body>
